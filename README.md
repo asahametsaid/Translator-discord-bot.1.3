@@ -1,42 +1,53 @@
-# Translator-discord-bot.1.3
-# 🤖 Discord Translator Bot (v1.3)
+# 🤖 Discord Translation Bot (v1.3)
 
-We're excited to share the latest updates for our Translator Bot (v1.3)! Built with **Node.js**, this release brings highly requested features, better performance, and more control over your server's translations. To help everyone get the most out of it, we've put together some video tutorials.
+We're excited to share the latest updates to our Translation Bot (v1.3)! Developed with **Node.js**, this version brings much-requested features, improved performance, and more control over your server's translations.
+
+# **Warning: This Bot Uses the Privileged Intent Condition**
 
 ## 🌍 Supported Languages
 
-The translator bot supports **18+ languages**!
+The translation bot supports **over 18 languages**!
+
 * **Available languages:** Turkish, English, Spanish, Indonesian, Czech, German, Ukrainian, Portuguese, Russian, Chinese, French, Dutch, Hindi, Romanian, Swedish, Greek, Filipino, Persian, and Arabic.
 
 ---
 
-## 🚀 What's New in v1.3
+## 🚀 So What Features Does Our Bot Have?
 
-### 📋 Interactive Control Panel & Channel Management
-You can now set up interactive panels and restrict bot commands to specific channels to keep your server organized:
-* **`/add-panel`**: Create and send an interactive translation panel to a specific channel.
-* **`/add-channels`**: Restrict translation commands so they can only be used in designated channels.
+### 📋 Interactive Control Panel and Channel Management
+Now you can set up interactive panels to keep your server organized and restrict bot commands to specific channels:
+* **`/add-panel`**: Create and post an interactive translation panel for a specific channel.
 
-### 🔓 Commands Separated (Public vs. Private)
-Public and Private options are now split into their own distinct commands. Use the option that best fits your server's privacy needs:
+* **`/add-channels`**: Restrict translation commands to only be used in designated channels.
+
+### 🔓 History Command
+
+Displays a maximum of 25 messages in a channel and translates the message you select.
+
+Public and Private options are now separated into their own commands. You can use the option that best suits your server's privacy needs.
 
 * **Public Options** (Visible to everyone in the channel)
-    * `/translate-history-public`
-    * `/translate-public`
-* **Private Options** (Ephemeral responses visible only to the user)
-    * `/translate-history-private`
-    * `/translate-private`
+* `/translate-history-public`
+* `/translate-public`
+
+* **Private Options** (Temporary replies visible only to the user)
+* `/translate-history-private`
+
+* `/translate-private`
+
+## Panel Feature
+
+This feature allows you to translate the next message based on it. It translates to your desired language with 18 button options and translates the message specifically for you.
+
+* You can use it with the `/translate-the-panel` command.
 
 ---
 
-## 🛠️ Installation & Setup (Node.js)
+## 🛠️ Installation and Settings (Node.js)
 
 ### Prerequisites
+
 * [Node.js](https://nodejs.org/) (v18.x or higher)
-* A Discord Bot Token
+* A Discord Bot Token (within Index.js)
 
-### Steps
-
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/yourusername/translate-bot.git](https://github.com/yourusername/translate-bot.git)
+The ID of the server you will use and Role IDs that will use the commands (in Index.js)
